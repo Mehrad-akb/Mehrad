@@ -43,6 +43,7 @@
 
 /* navbar styles */
 nav {
+    z-index: 10;
     position: sticky;
     top: 0;
     background: transparent;
@@ -130,6 +131,7 @@ nav section {
 .general a,
 .general button,
 .form .btn {
+    margin: 0 5px;
     border-radius: 8px;
     text-align: center;
     padding: 10px 12px;
@@ -368,21 +370,30 @@ textarea {
         margin: 0 12px;
     }
 
-    nav div {
+    nav section {
         display: none !important;
     }
-
+    .intro-container{
+        height: 110vh;
+        width: 90%;
+    }
     .intro {
         flex-direction: column;
         align-items: center;
     }
-
+    .intro-box{
+        width: 100% !important;
+        flex-direction: column-reverse;
+    }
+    .intro-btn a ,.intro-btn button{
+        width: 135px;
+    }
     .icon {
         flex-direction: row;
-        width: 20%;
     }
 
     .general {
+        gap: 8px;
         width: 90%;
         margin: 0 auto;
     }
@@ -392,12 +403,15 @@ textarea {
         margin: 0 auto;
     }
 
+    .bio-info{
+        height: 120vh;
+    }
     .basic-table {
         width: 90%;
     }
 
     .education {
-        height: fit-content;
+        height: 110vh;
         align-items: center;
     }
 
@@ -429,6 +443,12 @@ textarea {
     .ed-right h6 {
         font-size: 18px;
     }
+    .contact-bg{
+        height: 140vh;
+    }
+    .form{
+        gap: 5px;
+    }
 
     .form-section,
     .radio-section {
@@ -440,7 +460,7 @@ textarea {
     }
 
     textarea {
-        width: 100%;
+        width: 95%;
     }
 
     .form .btn {
